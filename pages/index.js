@@ -13,6 +13,8 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <button className="btn mb-2 mr-2 btn-primary" type="button">Primary</button>
+
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
