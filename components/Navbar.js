@@ -4,18 +4,20 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary mb-4">
             <div className="container position-relative">
-                <a className="navbar-brand mr-lg-3" href="#">
-                    <img className="navbar-brand-dark" src="/img/brand/light.svg" alt="menuimage" />
-                    <img className="navbar-brand-light" src="/img/brand/dark.svg" alt="menuimage" />
-                </a>
+                <Link href="/">
+                    <a className="navbar-brand mr-lg-3">
+                        <img className="navbar-brand-dark" src="/img/brand/light.svg" alt="menuimage" />
+                        <img className="navbar-brand-light" src="/img/brand/dark.svg" alt="menuimage" />
+                    </a>
+                </Link>
                 <div className="navbar-collapse collapse" id="navbar-default-primary">
                     <div className="navbar-collapse-header">
                         <div className="row">
                             <div className="col-6 collapse-brand">
                                 <Link href="/">
-                                <a>
-                                    <img src="/img/brand/dark.svg" alt="menuimage" />
-                                </a>
+                                    <a>
+                                        <img src="/img/brand/dark.svg" alt="menuimage" />
+                                    </a>
                                 </Link>
                             </div>
                             <div className="col-6 collapse-close">
@@ -28,17 +30,17 @@ export default function Navbar() {
                     <ul className="navbar-nav navbar-nav-hover align-items-lg-center">
                         <li className="nav-item">
                             <Link href="/">
-                            <a className="nav-link">Home</a>
+                                <a className="nav-link">Home</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/upload">
-                            <a className="nav-link">Upload</a>
+                                <a className="nav-link">Upload</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/about">
-                            <a className="nav-link">About</a>
+                                <a className="nav-link">About</a>
                             </Link>
                         </li>
                         {/* <li className="nav-item dropdown">

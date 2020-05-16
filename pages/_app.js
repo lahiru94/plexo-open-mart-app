@@ -37,9 +37,7 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <Navbar />
             <main>
-                
                 <Component {...pageProps} />
-             
             </main>
         </>
     )
