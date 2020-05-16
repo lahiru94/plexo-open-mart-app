@@ -8,13 +8,13 @@ export default function Home() {
 
   return (
     <>
-<div class="container">
+<div className="container">
       <section  style={{marginTop:60}}>
-        <div class="form-group">
-          <div class="input-group mb-4">
-            <input class="form-control" placeholder="Search for model" type="text"/>
-              <div class="input-group-append">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <div className="form-group">
+          <div className="input-group mb-4">
+            <input className="form-control" placeholder="Search for model" type="text"/>
+              <div className="input-group-append">
+                <span className="input-group-text"><i className="fas fa-search"></i></span>
               </div>
           </div>
         </div>
