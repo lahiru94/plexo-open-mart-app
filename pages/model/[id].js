@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import modelStyles from './Model.module.css'
 
 export default function Model(props) {
 
@@ -6,18 +7,19 @@ export default function Model(props) {
     const { id } = router.query
 
     return (
+        <>
+        <div className={modelStyles.modelHeaderBackground}/>
         <div className="container">
-
             <section>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center text-white">
                     <div className="col-12 col-md-8 text-center">
-                        <h1 className="display-2 mb-4" style={{ marginTop: 20 }}>Model Title</h1>
+                        <h1 className="display-2 mb-4" >Model Title</h1>
                         <p className="lead">Some quick desscription text to describe the model.</p>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section style={{marginTop:35}}>
             <div className="col-lg-12 mb-5">
                 <div className="card bg-white border-light flex-lg-row align-items-center no-gutters p-4">
                     <div className="col-12 col-lg-6">
@@ -89,5 +91,6 @@ export default function Model(props) {
                 </p>
             </section>
         </div>
+        </>
     )
 }
