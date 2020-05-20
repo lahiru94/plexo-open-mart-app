@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import ModelCard from '../components/ModelCard';
 const axios = require('axios');
+import config from '../config'
 
 export default function Home(props) {
 
@@ -15,7 +16,7 @@ export default function Home(props) {
         setShowSearchResults(true)
         setSearchLoading(true)
         try{
-            const response = await axios.post('http://localhost:3000/api/model/search',{
+            const response = await axios.post(config.baseUrl + '/model/search',{
                 query:searchQuery
             })
             setSearchResults(response.data.data)
@@ -83,7 +84,7 @@ export default function Home(props) {
 
 export async function getServerSideProps(context) {
 
-    const response = await axios.get('http://localhost:3000/api/model/featured')
+    const response = await axios.get(config.baseUrl + '/model/featured')
     return {
       props: {
             featuredModels: response.data.data

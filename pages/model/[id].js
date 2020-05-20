@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 const axios = require('axios');
 import modelStyles from './Model.module.css'
+import config from '../../config'
 
 export default function Model(props) {
 
@@ -111,7 +112,7 @@ export default function Model(props) {
 
 export async function getServerSideProps(context) {
 
-    const response = await axios.get('http://localhost:3000/api/model/'+context.params.id)
+    const response = await axios.get(config.baseUrl+'/model/'+context.params.id)
     return {
       props: {
             modelData: response.data.data
