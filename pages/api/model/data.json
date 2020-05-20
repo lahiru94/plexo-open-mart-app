@@ -1,0 +1,110 @@
+{ "data": [
+    {
+        "id":1,
+        "name":"Early fault detection for manufacturing eqiupments",
+        "categories":["Prediction", "ANN", "Predictive Maintainance"],
+        "origin": {
+            "author":"Author",
+            "paper":"Predictive Maintanance",
+            "year":"2019"
+        },
+        "technical_summary":{
+            "text_summary":"Manufacturers increasingly collect big data from Internet of Things (IoT) sensors in their factories and products and using different algorithms for the collected data to detect warning signs of expensive failures before they occur."
+        },
+        "stats": {
+            "views":1120,
+            "downloads":100,
+            "stars":9
+        }
+    },
+    {
+        "id":2,
+        "name":"Marketing intelligence",
+        "categories":["NLP", "Topic modelling"],
+        "origin": {
+            "author":"Author",
+            "paper":"Topic modelling for Market analysis",
+            "year":"2017"
+        },
+        "technical_summary":{
+            "text_summary":"Simple media monitoring is no longer what marketers need: they need advanced tools to filter through millions of blogs, websites and social media posts to stay abreast of what’s going on in the industry."
+        },
+        "stats": {
+            "views":5670,
+            "downloads":80,
+            "stars":8.5
+        }
+    },
+    {
+        "id":3,
+        "name":"Automated Loyality with Face Recognition",
+        "categories":["Image Processing", "Face Detection"],
+        "origin": {
+            "author":"Author",
+            "paper":"Face detection paper",
+            "year":"2013"
+        },
+        "technical_summary":{
+            "text_summary":"Discretely positioned cameras can inform Hosts of the imminent approach of VIP’s and give them the extra insight to be able to greet guests by name and affirm the personal relationship they want to convey."
+        },
+        "stats": {
+            "views":2670,
+            "downloads":280,
+            "stars":9.5
+        }
+    },
+    {
+        "id":4,
+        "name":"News Clustering",
+        "categories":["NLP", "Clustering"],
+        "origin": {
+            "author":"NLP Author boi",
+            "paper":"Doing stuff with NLP",
+            "year":"2020"
+        },
+        "technical_summary":{
+            "text_summary":"You no longer need to waste your time browsing the different websites to see the duplicated or irrelevant information. This model will find  unique articles that match your interests."
+        },
+        "stats": {
+            "views":8234,
+            "downloads":2123,
+            "stars":7.5
+        }
+    },
+    {
+        "id":5,
+        "name":"Identify Vehicles Types in South Easth Asia",
+        "categories":["Image Processing", "Classification", "Convolutional ANN"],
+        "origin": {
+            "author":"NLP Author boi",
+            "paper":"Vehicle identification using Deep learning",
+            "year":"2010"
+        },
+        "technical_summary":{
+            "text_summary":"This model is specifically trained with Vehicle images from south east asia to provide high accurate results in idenitfying vehicles in the area at a granular level."
+        },
+        "stats": {
+            "views":834,
+            "downloads":23,
+            "stars":9.1
+        }
+    },
+    {
+        "id":6,
+        "name":"Stock prediction appraoch for Sri Lanka",
+        "categories":["Forecasting", "RNN", "LSTM", "NLP"],
+        "origin": {
+            "author":"NLP Author boi",
+            "paper":"Stock prediction: Integrating text mining approach using real-time news",
+            "year":"2020"
+        },
+        "technical_summary":{
+            "text_summary":"Mining textual documents and time series concurrently, such as predicting the movements of stock prices based on news articles, is an emerging topic in data mining society nowadays.P"
+        },
+        "stats": {
+            "views":34,
+            "downloads":3,
+            "stars":2.1
+        }
+    }
+] }

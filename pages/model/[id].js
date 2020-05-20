@@ -1,7 +1,10 @@
 import { useRouter } from 'next/router'
+const axios = require('axios');
 import modelStyles from './Model.module.css'
 
 export default function Model(props) {
+
+    const{modelData} = props
 
     const router = useRouter()
     const { id } = router.query
@@ -13,8 +16,8 @@ export default function Model(props) {
             <section>
                 <div className="row justify-content-center text-white">
                     <div className="col-12 col-md-8 text-center">
-                        <h1 className="display-2 mb-4" >Model Title</h1>
-                        <p className="lead">Some quick desscription text to describe the model.</p>
+                        <h1 className="display-2 mb-4" > {modelData.name} </h1>
+                        <p className="lead"> {modelData.technical_summary.text_summary} </p>
                     </div>
                 </div>
             </section>
@@ -41,7 +44,7 @@ export default function Model(props) {
                                             Rating
                                         </div>
                                     </td>
-                                    <td>9/10</td>
+                                    <td> {modelData.stats.stars} /10</td>
 
                                 </tr>
                                 <tr>
@@ -51,18 +54,29 @@ export default function Model(props) {
                                         </div>
                                     </td>
                                     <td>
-                                        <span className="badge badge-primary ml-2">RNN</span>
-                                        <span className="badge badge-primary ml-2">Forecasting</span>
+                                        { modelData.categories && modelData.categories.map((cat,i)=>{
+                                            return(
+                                                <span style={{marginBottom:3}} className="badge badge-primary ml-2"> {cat} </span>
+                                            )
+                                        })}
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
                                         <div className="d-flex align-items-center">
-                                            Total Downloads
+                                            Views
                                         </div>
                                     </td>
-                                    <td>568</td>
+                                    <td> {modelData.stats.views} </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className="d-flex align-items-center">
+                                            Downloads
+                                        </div>
+                                    </td>
+                                    <td> {modelData.stats.downloads} </td>
                                 </tr>
 
                             </tbody>
@@ -93,4 +107,14 @@ export default function Model(props) {
         </div>
         </>
     )
+}
+
+export async function getServerSideProps(context) {
+
+    const response = await axios.get('http://localhost:3000/api/model/'+context.params.id)
+    return {
+      props: {
+            modelData: response.data.data
+      }, // will be passed to the page component as props
+    }
 }
