@@ -46,7 +46,7 @@ export default function Home(props) {
                     <div className="input-group mb-4">
                         <input 
                             className="form-control" 
-                            placeholder="Search for model" 
+                            placeholder="Search for models" 
                             type="text" 
                             onKeyPress={detectSearchEnter}
                             value={searchQuery}
