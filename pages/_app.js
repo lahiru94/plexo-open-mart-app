@@ -1,10 +1,24 @@
+import {useState} from 'react'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import '../public/css/pixel.css'
+import authContext from '../contexts/auth-context'
 
 export default function MyApp({ Component, pageProps }) {
+
+    const [authData, setAuthData] = useState({
+        user:{},
+        signedIn:false
+    })
+
+    const authContextValue = {
+        authData,
+        setAuthData
+    }
+
     return (
         <>
+            <authContext.Provider value={authContextValue}>
             <Head>
                 <title>Plexo - Open Mart</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -39,6 +53,7 @@ export default function MyApp({ Component, pageProps }) {
             <main>
                 <Component {...pageProps} />
             </main>
+            </authContext.Provider>
         </>
     )
 }

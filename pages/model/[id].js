@@ -57,7 +57,7 @@ export default function Model(props) {
                                     <td>
                                         { modelData.categories && modelData.categories.map((cat,i)=>{
                                             return(
-                                                <span style={{marginBottom:3}} className="badge badge-primary ml-2"> {cat} </span>
+                                                <span key={cat} style={{marginBottom:3}} className="badge badge-primary ml-2"> {cat} </span>
                                             )
                                         })}
                                     </td>
