@@ -1,5 +1,5 @@
 const config = {
-    baseUrl:"http://localhost:3000/api"
+    baseUrl:"https://plexo-open-mart-app.now.sh/api"
 }
 
 export default config;
