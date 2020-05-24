@@ -8,7 +8,7 @@ function About() {
                 <div className="container">
                     <div className="row align-items-center justify-content-around">
                         <div className="col-md-6 col-xl-6 my-5 mt-sm-0 d-none d-sm-block"><img className="rounded img-fluid effect-img-1" src="/img/sections/about-us-3.jpg" alt="Working peoples" />
-                            <img className="rounded img-fluid effect-img-2" src="/img/sections/about-plexo.jpeg" alt="Themesberg Office " /></div>
+                            <img className="rounded img-fluid effect-img-2" src="/img/sections/about-plexo.jpg" alt="Themesberg Office " /></div>
                         <div className="col-md-6 col-xl-5 text-center text-md-left">
                             <h2 className="h1 mb-5 font-weight-light">top-drawer<br /><span className="font-weight-bold">ML models.</span></h2>
                             <p className="lead"> 
