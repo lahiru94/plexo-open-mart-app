@@ -91,7 +91,7 @@ export default function Navbar() {
                         <li className="nav-item dropdown">
                             <a href="#" className="nav-link" data-toggle="dropdown" role="button">
                                 <i className="fas fa-angle-down nav-link-arrow"></i>
-                                <span className="nav-link-inner-text"> <i class="far fa-user-circle"></i> </span>
+                                <span className="nav-link-inner-text"> <i className="far fa-user-circle"></i> </span>
                             </a>
                             <ul hidden={!authData.signedIn} className="dropdown-menu">
                                 <li><a className="dropdown-item" href="#">Profile</a></li>

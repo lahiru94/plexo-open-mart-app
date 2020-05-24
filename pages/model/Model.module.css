@@ -1,15 +1,24 @@
 .modelHeaderBackground {
-    position: absolute; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 500px; /* Full height (cover the whole page) */
+    position: absolute;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 500px;
+    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #242e4c; /* Black background with opacity */
-    z-index: -100; 
+    background-color: #242e4c;
+    /* Black background with opacity */
+    z-index: -100;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.paragraphText{
+    font-weight: 350 !important;
+    font-size: 20px !important;
 }
