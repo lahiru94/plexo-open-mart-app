@@ -14,7 +14,7 @@ export default function Home(props) {
 
     useEffect(()=>{
         loadFeaturedModles()
-    })
+    },[])
 
     const loadFeaturedModles = async () => {
         const response = await axios.get(config.baseUrl + '/model/featured')
