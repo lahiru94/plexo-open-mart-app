@@ -86,7 +86,7 @@ export default function Navbar() {
                         </li> */}
                     </ul>
                 </div>
-                <div className="d-flex align-items-center">
+                {/* <div className="d-flex align-items-center">
                     <ul className="navbar-nav navbar-nav-hover align-items-lg-center">
                         <li className="nav-item dropdown">
                             <a href="#" className="nav-link" data-toggle="dropdown" role="button">
@@ -97,7 +97,7 @@ export default function Navbar() {
                                 <li><a className="dropdown-item" href="#">Profile</a></li>
                                 <li><a className="dropdown-item" href="#">My Uploads</a></li>
                                 <li><a className="dropdown-item" href="#">Bookmarks</a></li>
-                                {/* <li className="dropdown-submenu">
+                                <li className="dropdown-submenu">
                                     <a href="#" className="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">
                                         User action 3 
                                         <i className="fas fa-angle-right nav-link-arrow"></i>
@@ -110,7 +110,7 @@ export default function Navbar() {
                                             <a href="#" className="dropdown-item">secondary action 2</a>
                                         </li>
                                     </ul>
-                                </li> */}
+                                </li>
                                 <li onClick={signOut}><a className="dropdown-item" href="#">Sign out</a></li>
                             </ul>
                             <ul hidden={authData.signedIn} className="dropdown-menu">
@@ -118,7 +118,7 @@ export default function Navbar() {
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="d-flex align-items-center">
                     <p className="text-white mb-0">Plexo - Open Mart</p>
                     <button className="navbar-toggler ml-2" type="button" data-toggle="collapse"

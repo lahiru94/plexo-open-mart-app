@@ -1,0 +1,6 @@
+.clickableText{
+    text-decoration-line:underline;
+    text-decoration-color: gray;
+    text-decoration-style: dashed;
+    cursor: pointer;
+}
