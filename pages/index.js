@@ -1,16 +1,25 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import ModelCard from '../components/ModelCard';
 const axios = require('axios');
 import config from '../config'
 
 export default function Home(props) {
 
-    const {featuredModels} = props
+    const [featuredModels, setFeaturedModels] = useState([])
 
     const [searchQuery, setSearchQuery] = useState(null);
     const [searchLoading, setSearchLoading] = useState(false);
     const [searchResults, setSearchResults] = useState([]);
     const [showSeachResults, setShowSearchResults] = useState(false)
+
+    useEffect(()=>{
+        loadFeaturedModles()
+    })
+
+    const loadFeaturedModles = async () => {
+        const response = await axios.get(config.baseUrl + '/model/featured')
+        setFeaturedModels(response.data.data)
+    }
 
     const searchModels = async () => {
         setShowSearchResults(true)
@@ -79,15 +88,4 @@ export default function Home(props) {
             </section>
         </div>
     )
-}
-
-
-export async function getServerSideProps(context) {
-
-    const response = await axios.get(config.baseUrl + '/model/featured')
-    return {
-      props: {
-            featuredModels: response.data.data
-      }, // will be passed to the page component as props
-    }
 }
