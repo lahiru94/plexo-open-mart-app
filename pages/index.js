@@ -17,7 +17,7 @@ export default function Home(props) {
     },[])
 
     const loadFeaturedModles = async () => {
-        const response = await axios.get(config.baseUrl + '/model/featured')
+        const response = await axios.get(config.baseUrl + '/mlmodels')
         setFeaturedModels(response.data.data)
     }
 

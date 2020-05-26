@@ -13,7 +13,7 @@ function About() {
                             <h2 className="h1 mb-5 font-weight-light">top-drawer<br /><span className="font-weight-bold">ML models.</span></h2>
                             <p className="lead"> 
                                 Plexo Mart is a collection of carefully curated, high-quality ML models.  
-                                Each model comes with a clear explanation of what it does, how it does that and how well it has performed.
+                                Each model comes with a clear explanation of what it does, how it does that and how well it performs.
                             </p>
                             <p className="lead"> 
                                 You can even 

@@ -3,6 +3,7 @@
         "id":1,
         "name":"Early fault detection for manufacturing eqiupments",
         "categories":["Prediction", "ANN", "Predictive Maintainance"],
+        "header_image":"/img/blog/image-1.jpg",
         "origin": {
             "author":"Author",
             "paper":"Predictive Maintanance",
@@ -21,6 +22,7 @@
         "id":2,
         "name":"Marketing intelligence",
         "categories":["NLP", "Topic modelling"],
+        "header_image":"/img/blog/image-2.jpg",
         "origin": {
             "author":"Author",
             "paper":"Topic modelling for Market analysis",
@@ -39,6 +41,7 @@
         "id":3,
         "name":"Automated Loyality with Face Recognition",
         "categories":["Image Processing", "Face Detection"],
+        "header_image":"/img/blog/image-3.jpg",
         "origin": {
             "author":"Author",
             "paper":"Face detection paper",
@@ -57,6 +60,7 @@
         "id":4,
         "name":"News Clustering",
         "categories":["NLP", "Clustering"],
+        "header_image":"/img/blog/image-4.jpg",
         "origin": {
             "author":"NLP Author boi",
             "paper":"Doing stuff with NLP",
@@ -75,6 +79,7 @@
         "id":5,
         "name":"Identify Vehicles Types in South Easth Asia",
         "categories":["Image Processing", "Classification", "Convolutional ANN"],
+        "header_image":"/img/blog/image-5.jpg",
         "origin": {
             "author":"NLP Author boi",
             "paper":"Vehicle identification using Deep learning",
@@ -93,6 +98,7 @@
         "id":6,
         "name":"Stock prediction appraoch for Sri Lanka",
         "categories":["Forecasting", "RNN", "LSTM", "NLP"],
+        "header_image":"/img/blog/image-6.jpg",
         "origin": {
             "author":"NLP Author boi",
             "paper":"Stock prediction: Integrating text mining approach using real-time news",
